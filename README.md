@@ -4,7 +4,7 @@ Ce site n'a pas pour vocation de remplacer des wikis déjà très bien fais en a
 Page de test
 
 <a href="test.html">Test</a>
-[Ou test comme ça](test.html)
+[Ou test comme ça](test.md)
 
 
 ## Welcome to GitHub Pages
