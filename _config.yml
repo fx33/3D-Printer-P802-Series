@@ -1,1 +1,6 @@
 theme: jekyll-theme-midnight
+---
+layout: default
+comments: true
+# other options
+---
