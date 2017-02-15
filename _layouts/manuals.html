@@ -3,4 +3,7 @@ layout: pages
 isManuals: true
 ---
 {{content}}
-{% include disqus.html %}
+{% if page.comments %}
+    &nbsp;
+    {% include disqus.html %}
+{% endif %}

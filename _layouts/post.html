@@ -11,4 +11,7 @@ layout: default
 
 {{ content }}
 
-{% include disqus.html %}
+{% if page.comments %}
+    &nbsp;
+    {% include disqus.html %}
+{% endif %}
