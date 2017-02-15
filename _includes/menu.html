@@ -1,0 +1,32 @@
+<li><a href="{{site.url}}/">Accueil</a></li>
+<ul class="nav navbar-nav">
+    {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% assign currentPage = page.url | remove: 'index.html' %}
+        {% if currentPage == link.url or page.layout == link.layout %}
+            {% assign current = 'active' %} // changer le nom de la classe
+        {% endif %}
+        <li class="{{current}}"><a href="{{site.url}}{{ link.url }}">{{ link.text }}</a></li>
+    {% endfor %}
+    <li><a href="mailto:exemple@exemple.com">Contact</a></li>
+</ul>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{site.url}}/">Mon site</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav"><li><a href="{{site.url}}/">index</a></li>
+                <li><a href="{{site.url}}/about/">A propos</a></li>
+                <li><a href="mailto:exemple@exemple.com">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
