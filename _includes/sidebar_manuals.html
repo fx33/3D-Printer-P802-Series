@@ -1,0 +1,10 @@
+<ul>
+{% for manual in site.data.manuals %}
+  <li>
+    Modèle :
+    <a href="{{ site.github.repository_url }}{{ manual.installation_guide }}" class="button">
+      {{ manual.model }}
+    </a>
+  </li>
+{% endfor %}
+</ul>

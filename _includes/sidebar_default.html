@@ -1,0 +1,8 @@
+<aside id="sidebar">
+  {% if page.isHome %}
+    {% include sidebar_home.html %}
+  {% endif %}
+  {% if layout.isManuals %}
+    {% include sidebar_manuals.html %}
+  {% endif %}
+</aside>
