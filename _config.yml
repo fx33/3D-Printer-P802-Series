@@ -1,13 +1,6 @@
 theme: jekyll-theme-architect
-navigation:
-    - text: Accueil
-      url: /
-  - text: A propos
-      url: /about/
-    - text: Manuels et Guides
-      url: /manuals.html
-      layout: post
 ---
+
 comments: true
 # other options
 ---

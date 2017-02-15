@@ -29,7 +29,6 @@
           <a href="{{ site.github.repository_url }}" class="button"><small>Suivez moi sur</small> GitHub</a>
         {% endif %}
       </div>
-    {% include menu.html %}
     </header>
 
     <div id="content-wrapper">
@@ -38,6 +37,7 @@
           {{ content }}
         </section>
 
+        {% include menu.html %}
         {% include sidebar_default.html %}
 
       </div>
